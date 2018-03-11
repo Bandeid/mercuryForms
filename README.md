@@ -1,10 +1,2 @@
-# MercuryForms
-APP for search and build XFDL form and documents integrate with MercuryFormsServer
-
-Using jQuery, HTML and CSS to build this application. 
-
-HOW TO INTEGRATE WITH MERCURYFORMS SERVER
-
-Configure the SERVE IP (local or not) on control.js.
-
-We can also build and WEBAPP with NWJS.
+This project is a client for search, creating, filling and indexing digital forms based on XFDL.
+Mercury Forms is a Java RESTFUL web service with Lucene API for indexing proccess.

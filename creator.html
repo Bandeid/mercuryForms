@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="MERCURY FORMS" content="content" charset="utf-8">
+  <title>MERCURY FORMS :: Criação</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="./css/materialize.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./jquery-ui-1.11.4.custom/jquery-ui.css">
+
+</head>
+<body>
+  <!-- Page Layout here -->
+  <nav>
+    <div class="nav-wrapper grey lighten-1">
+      <a id="titleNav" class="brand-logo center black-text">M.F.: Criação</a>
+      <ul id="nav-mobile" class="left">
+        <li><a id="homeBt" href="./index.html" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Voltar ao menu"><i class="material-icons">arrow_back</i></a></li>
+        <li><a id="newFormBt" href="#preloaderModal" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Novo Formulário"><i class="material-icons">add</i></a></li>
+        <li><a id="openBt" href="#" class="file-field input-field tooltipped" data-position="bottom" data-delay="50" data-tooltip="Abrir formulário"><i class="material-icons">folder_open</i><input id="file" type="file"></a></li>
+      </ul>
+      <ul id="nav-mobile" class="right">
+        <li><a id="helpBt" href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Informações gerais"><i class="material-icons">help_outline</i></a></li>
+        <li><a id="salvarBt" href="#" class="input-field tooltipped" data-position="bottom" data-delay="50" data-tooltip="Salvar formulário"><i class="material-icons">save</i></a></li>
+        <!-- <li><a id="" href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Salvar formulário" nwsaveas><i class="material-icons">save</i></a></li> -->
+        <li><a id="enviarBt" methodaction="uploadTemplate" pageform="page" href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Enviar formulário"><i class="material-icons">send</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="titleForm">
+    <div class="col s12"><span id="formNameTitle" class="flow-text">Título: FORMULÁRIO NULO</span></div>
+  </div>
+  <div class="row">
+
+    <div id="" class="sideMenu">
+      <div class="card grey lighten-1">
+        <div class="card-content">
+          <span class="card-title">Componentes</span>
+          <table>
+            <tbody>
+              <tr class="wrapper">
+                <td>
+                  <div id="label" class="parent ui-widget-content componentes" data-tooltip="">
+                    <p class="child">Rótulo Textual</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wrapper">
+                <td>
+                  <div id="field" class="parent ui-widget-content componentes" data-tooltip="">
+                    <input class="child" type="text" value="Campo de Texto" disabled/>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wrapper">
+                <td>
+                  <div id="radio" class="parent ui-widget-content componentes" data-tooltip="">
+                    <input class="child" name="radio_group" type="radio" id="radioBt" disabled/>
+                    <label class="labelRadio" for="radioBt">Botão Radio</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wrapper">
+                <td>
+                  <div id="check" class="parent ui-widget-content componentes" data-tooltip="">
+                    <input type="checkbox" class="child" id="filled-in-box" checked disabled />
+                    <label class="labelRadio" for="filled-in-box">Botão Seleção</label>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wrapper">
+                <td>
+                  <div id="popup" class="parent ui-widget-content componentes" data-tooltip="">
+                    <select name="popup_group" class="child browser-default" disabled>
+                      <option value="" disabled selected>Caixa de selecão</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wrapper">
+                <td>
+                  <div id="button" class="parent ui-widget-content componentes" data-tooltip="">
+                    <a class="child waves-effect grey darken-1 white-text waves-light btn" disabled>Botão</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="propriedades">
+          <div class="card-content">
+            <span class="card-title">Propriedades</span>
+            <table>
+              <tbody>
+                <tr id="valueTableRow">
+                  <td>Texto</td>
+                  <td id="tdFields"><input id="valorTableField" class="tableField" type="text" name="name" value=""></td>
+                </tr>
+                <tr id="optionsTableRow">
+                  <td>Opções</td>
+                  <td>
+                    <a id="btOptions" class="col s12 btn grey darken-1 modal-trigger" data-target="modalOptions"><i class="material-icons">open_in_new</i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Descrição</td>
+                  <td id="tdFields"><input id="descTableField" class="tableField" type="text" name="name" value=""></td>
+                </tr>
+                <tr id="groupTableRow">
+                  <td>Grupo</td>
+                  <td id="tdFields"><input id="groupTableField" class="tableField" type="text" name="name" value=""></td>
+                </tr>
+                <tr>
+                  <td>Estilo Fonte</td>
+                  <td id="tdFields">
+                    <select id="fs" class="browser-default">
+                      <option value=""></option>
+                      <option value="Arial">Arial</option>
+                      <option value="Verdana">Verdana </option>
+                      <option value="Impact">Impact </option>
+                      <option value="Comic Sans MS">Comic Sans MS</option>
+                      <option value="Times New Roman">Times New Roman</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tamanho</td>
+                  <td id="tdFields"><input id="fontSizeTableField" class="tableField" type="number" name="name" value=""></td>
+                </tr>
+                <tr id="alignTableRow">
+                  <td>Alinhamento</td>
+                  <td>
+                    <a id="leftAlignBt" class="btn grey darken-1 btn-minor col s3"><i class="material-icons">format_align_left</i></a>
+                    <a id="rightAlignBt" class="btn grey darken-1 btn-minor col s3"><i class="material-icons">format_align_right</i></a>
+                    <a id="centerAlignBt" class="btn grey darken-1 btn-minor col s3"><i class="material-icons">format_align_center</i></a>
+                    <a id="justifyAlignBt" class="btn grey darken-1 btn-minor col s3"><i class="material-icons">format_align_justify</i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="droppable" class="page ui-widget-header"></div>
+
+    <!-- <div id="editOption" class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large orange">
+    <i class="large material-icons">more_horiz</i>
+  </a>
+  <ul>
+  <li><a id="btEditContent" class="btn-floating blue"><i class="material-icons">mode_edit</i></a></li>
+  <li><a id="btAumentarFontSize" class="btn-floating yellow darken-1"><i class="material-icons">add</i></a></li>
+  <li><a id="btDiminuirFontSize" class="btn-floating green"><i class="material-icons">remove</i></a></li>
+  <li><a id="btDeleteElement" class="btn-floating red"><i class="material-icons">delete</i></a></li>
+</ul>
+</div> -->
+</div>
+<!-- Modal Structure -->
+<div id="modalOptions" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Opções</h4>
+    <div class="row">
+      <p class="col s10">Defina as suas opções:</p>
+      <p class="col s2"><a href="#" class="btn green darken-3 addNewOption right tooltipped" data-tooltip="Criar um nova opção" data-position="bottom" data-delay="50"><i class="material-icons">add</i></a></p>
+    </div>
+    <div class="row">
+      <table id="optionsListModal">
+        <thead>
+          <tr>
+            <th data-field="Valores">Valores</th>
+            <th data-field="Ações">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="" type="text" placeholder="Opção"/></td>
+            <td>
+              <a href="#" class="col s6 btn amber waves-effect waves-light editOptionBt"><i class="material-icons">edit</i></a>
+              <a href="#" class="col s6 btn red accent-4 waves-effect waves-light removeOptionBt"><i class="material-icons">delete</i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-light grey darken-3 btn">Concluir</a>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="preloaderModal" class="modal">
+  <div class="modal-content">
+    <h4>Novo Formulário</h4>
+    <div class="row">
+      <div class="col s12">
+        <input id="radioNew" name="groupNew" type="radio" id="test2" value="new" checked/>
+        <label for="radioNew">Novo arquivo</label>
+      </div>
+      <div class="col s12">
+        <input id="radioOpen" name="groupNew" type="radio" id="test1" value="open" unchecked/>
+        <label for="radioOpen">Abrir arquivo</label>
+      </div>
+    </div>
+    <div class="row">
+      <div id="divNew" class="input-field col s12">
+        <input id="formName" type="text" class="validate" placeholder="Ex.: Requerimento Segunda Chamada">
+        <label for="formName">Nome do formulário</label>
+      </div>
+      <div id="divOpen" class="input-field col s12">
+        <div class="file-field input-field">
+          <div class="waves-effect waves-light grey darken-3 btn">
+            <span><i class="material-icons">folder_open</i></span>
+            <input id="openFile" type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Ex.: Requerimento Segunda Chamada.XFDL">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a id="okNewform" href="#!" class="modal-action waves-light btn grey darken-2">Concluir</a>
+  </div>
+</div>
+
+<script type="text/javascript" src="./jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="./jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<script type="text/javascript" src="./js/materialize.js"></script>
+<script type="text/javascript" src="./js/control.js"></script>
+
+</body>
+</html>

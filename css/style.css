@@ -1,0 +1,302 @@
+
+@font-face {
+    font-family: Cinzel;
+    src: url(../font/Cinzel/Cinzel-Regular.ttf);
+    font-size: 14!important;
+}
+
+.modal { width: 56% !important ; max-height: 100% !important }
+
+.brand-logo{
+  font-family: Cinzel !important;
+}
+#tdFields{
+  background-color: #eeeeee!important;
+}
+#dialogConfirm{
+  position: fixed!important;
+  height: 200px!important;
+  width: 200px!important;
+  background-color: #000!important;
+  z-index: 20!important;
+}
+.spinner-green-only{
+  border-color: white!important;
+}
+html {
+  font-family:"Times New Roman", Times, serif !important;
+}
+body, h5, h4 {
+   /*padding: 0 0;*/
+   font-size: 14!important;
+   font-family: Cinzel;
+   font-style: normal;
+   font-weight: 400;
+}
+.btn-minor{
+  padding: 1px!important;
+}
+#titlefield{
+margin: 8%;
+text-align: center;
+}
+input,select{
+  /*padding: 0px 0px!important;*/
+  /*height: 2rem!important;*/
+}
+#query{
+text-align: center;
+max-width: 50%;
+min-width: 50%;
+}
+
+#result{
+  text-align: justify;
+  position: relative;
+  min-width: 100%;
+  min-height: 20%;
+}
+.formLink{
+  color: #424242;
+  text-align: left;
+}
+.formLink:hover{
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+#formNameTitle{
+  color: #ccc;
+}
+
+.sideMenu{
+  margin: 0 0.5%;
+  padding: 1%;
+  min-height: 500px;
+  width: 22%;
+  float: left;
+  position: relative !important;
+}
+.child+.ui-draggable-dragging{
+  display: hidden!important;
+  /*position: relative!important;*/
+  /*z-index: -1;*/
+}
+.ui-widget-content{
+  /*border: 0px solid #e0e0e0;*/
+  /*margin: 0.5% !important;*/
+  /*padding: 0px 0px!important;*/
+  /*z-index: 2!important;*/
+  /*height: 2rem!important;*/
+  /*position: relative !important;*/
+  /*padding: 1% !important;*/
+}
+.ui-widget-header{
+  z-index:2;
+  height: 600px !important;
+  padding: 1% !important;
+  margin: 1.8% 0 !important;
+  width: 76% !important;
+  overflow: auto !important;
+  float: left !important;
+  background: url('../img/grid.png') repeat !important;
+  border: solid 1px #e0e0e0!important;
+}
+.ui-resizable-helper { border: 2px dotted #1e88e5; }
+input#file, #fileSave{
+  height: inherit!important;
+  /*width: inherit!important;*/
+}
+.form-page{
+  /*background: url('../img/grid.png') repeat !important;*/
+  border: solid 3px #e0e0e0!important;
+}
+#droppable, .form-page {
+   margin-top: 0.5%;
+   padding: 2%;
+   border: solid 0px #e0e0e0;
+   height: 600px;
+   width: 98%;
+   position: relative!important;
+ }
+.titleForm{
+  text-align: center;
+  margin-top: 2%;
+}
+#formNameTitle{text-decoration: underline;}
+p, input[type="text"]:disabled,  {
+  color: #000 !important;
+  font-size: 14px;
+}
+input[type="text"]:disabled {
+  border-bottom: solid 1px #757575 !important;
+  color: black!important;
+}
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label{
+  color: black;
+}
+
+
+#field > input{
+  /*font-size: 14px !important;*/
+  /*z-index: -1!important;*/
+}
+
+#field{
+  /*z-index: 2!important;*/
+}
+
+#label, #field > input[type=text], #radio > input[type=radio], #dropdown > select, #button > a, #check > input[text=check]{
+  font-family:"Times New Roman", Times, serif;
+  font-size: 14px !important;
+  margin: 1px 1px!important;
+  padding: 1px 1px !important;
+  color: black!important;
+}
+
+p {
+  margin: 0;
+}
+
+/*input[typu]*/
+.labelRadio{
+  color: #000000!important;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 14px !important;
+  height: 2rem!important;
+}
+
+#draggable:hover{
+  cursor: pointer;
+  font-family:"Times New Roman", Times, serif;
+}
+
+#fs{
+  text-align: left !important;
+}
+
+.editable{}
+
+#button > a{
+  color: #fff!important;
+}
+.element{
+    border: dashed 2px #000 !important;
+    font-size: 12px;
+}
+
+.selected{
+  border: double 2px #000 !important;
+}
+#propriedades{
+  width: 100%;
+  position: relative;
+  padding: 0 !important;
+  font-size: 10px!important;
+}
+
+#propriedades td{
+  border: solid 1px #424242 !important;
+}
+.black-text{
+  color: #000!important;
+}
+.tableField, #btOptions{
+  width: 100% !important;
+  font-size: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+table{
+  font-size: 10px!important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+table td{
+  /*border: solid 0px #e0e0e0 !important;*/
+  margin: 0px 1px !important;
+  padding: 0px 1px !important;
+}
+table tr{
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 30px!important;
+}
+.browser-default{
+  background-color: inherit!important;
+}
+.componentes{
+  /*cursor: pointer;*/
+  /*z-index: 2!important;*/
+  /*border: solid 1px #e0e0e0 !important;*/
+}
+.componentes: hover{
+  /*border-color: black !important;*/
+}
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+}
+.parent {
+    /*border: groove 1px!important;*/
+    position:  relative!important;
+    background: transparent!important;
+    z-index: initial!important;
+    padding: 0px 0px!important;
+    margin: 0px 0px!important;
+}
+.parent:hover{
+  border: 1px solid #000!important;
+  outline: 1px solid #000!important;
+  /*background-color: red!important;*/
+  cursor: pointer!important;
+}
+.child {
+    position: relative!important;
+    background: transparent!important;
+    z-index: -1!important;
+    height: 95%!important;
+    width: 99%!important;
+    padding: 0 1%!important;
+    margin: 0px 0px!important;
+    height: inherit;
+    width: inherit;
+
+    /*display: none!important;*/
+    /*color: white;*/
+}
+.browser-default{
+  /*border: border: 1px solid #000!important;*/
+}
+.wrapper{
+    position: relative!important;
+    background: transparent!important;
+    background: #eee!important;
+    z-index: 10!important;
+    padding: 0px 0px!important;
+    margin: 0px 0px!important;
+    opacity: 0.99;
+  }
+  .modal {
+      width: 76% !important;
+      max-height: 100% !important;
+  }

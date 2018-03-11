@@ -1,0 +1,14 @@
+{
+  "name": "MERCURY FORMS",
+  "version": "0.0.1",
+  "main": "index.html",
+  "window":{
+      "width": 1080,
+      "height": 600,
+      "toolbar": false,
+      "chromium-args": "--disable-setuid-sandbox",
+      "icon": "./img/mercury_forms_ico.png"
+    },
+    "author": "AFONSO HENRIQUE ANASTACIO CALABRIA",
+    "description": "MERCURY FORMS CLIENT"
+  }

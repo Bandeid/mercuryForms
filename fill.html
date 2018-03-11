@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="MERCURY FORMS" content="content" charset="utf-8">
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset="ISO-8859-1" /> -->
+  <title>MERCURY FORMS :: Preenchimento</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="./css/materialize.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./jquery-ui-1.11.4.custom/jquery-ui.css">
+
+</head>
+<body class="">
+  <!-- Page Layout here -->
+
+  <nav>
+    <div class="nav-wrapper grey lighten-1">
+      <a id="titleNav" class="brand-logo center black-text">Mercury Forms Search: Preenchimento</a>
+      <ul id="nav-mobile" class="left">
+        <li><a id="homeBt" href="./index.html" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Voltar ao menu"><i class="material-icons">arrow_back</i></a></li>
+        <!-- <li><a id="newFormBt" href="#preloaderModal" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Novo Formulário"><i class="material-icons">add</i></a></li> -->
+        <!-- <li><a id="openBt" href="#" class="file-field input-field tooltipped" data-position="bottom" data-delay="50" data-tooltip="Abrir formulário"><i class="material-icons">folder_open</i><input id="file" type="file"></a></li> -->
+      </ul>
+      <ul id="nav-mobile" class="right">
+        <!-- <li><a id="helpBt" href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Informações gerais"><i class="material-icons">help_outline</i></a></li> -->
+        <!-- <li><a id="salvarBt" href="#" class="input-field tooltipped" data-position="bottom" data-delay="50" data-tooltip="Salvar formulário"><i class="material-icons">save</i></a></li> -->
+        <!-- <li><a id="" href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Salvar formulário" nwsaveas><i class="material-icons">save</i></a></li> -->
+        <li><a id="enviarBt" href="#" methodaction="upload" pageform="form-page" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Enviar formulário"><i class="material-icons">send</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Modal Structure -->
+<div id="preloaderModal2" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div id="getTemplates"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a id="" href="./index.html" class="modal-action modal-close waves-light btn grey darken-2">Cancelar <i class="material-icons">arrow_back</i></a>
+  </div>
+</div>
+
+<div class="container" style="padding-top: 40px">
+  <h5 id="formNameTitle" class="left" style="margin-top: -30px"></h5>
+  <div class="row">
+    <div class="form-page"></div>
+  </div>
+</div>
+
+<script type="text/javascript" src="./jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="./jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<script type="text/javascript" src="./js/materialize.js"></script>
+<script type="text/javascript" src="./js/control.js"></script>
+
+</body>
+</html>
